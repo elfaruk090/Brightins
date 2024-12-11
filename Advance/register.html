@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Brightins | Register</title>
+    <link rel="shortcut icon" href="images/icon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+
+    <style>
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: gold;
+    }
+    h3{
+        font-size: 18px;
+        color: gold;
+    }
+    h3 a{
+        text-decoration: none;
+        color: white;
+    }
+    #container{
+        background-color:  #062959;
+        margin: auto;
+        padding: 20px;
+        width: 40%;
+        height: 60% auto;
+        border: 1px solid;
+        border-radius: 15px;
+        box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+    #input{
+        width: 90%;
+        height: 45px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    #openPayment{
+        width: 90%;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        color: black;
+        background-color: wheat;
+        cursor: pointer;
+        margin-bottom: 15px;
+        h3{
+            display: flex;
+        }
+    }
+    #button{
+        width: 90%;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+    #button:active{
+        background-color: red;
+    }
+}
+#paymentBox{
+    text-align: center;
+    position: absolute;
+    background-color:  #062959;
+    width: 40%;
+    height: 60% auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: none;
+    #closePayment{
+        background-color: red;
+        color: black;
+        width: 100%;
+        height: 45px;
+        padding: 10px;
+        font-size: 30px;
+        border: none; 
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        cursor: pointer;
+    }
+    #details{
+        text-align: start;
+        width: 100%;
+        padding-left: 40px;
+        box-sizing: border-box;
+        h3{
+            b{
+                color: gold;
+            }
+            color: white;
+        }
+    }
+    #pinput{
+        justify-self: center;
+        width: 90%;
+        height: 45px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    #pinputReciept{
+        justify-self: center;
+        width: 90%;
+        height: 45px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: red;
+        display: block;
+        cursor: pointer;
+    }
+    #pbutton{
+        width: 90%;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+}
+
+/*Mobile Screen*/
+@media (max-width: 580px) {
+    body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: gold;
+    }
+    h3{
+        font-size: 18px;
+        color: gold;
+    }
+    h3 a{
+        text-decoration: none;
+        color: white;
+    }
+    #container{
+        background-color:  #062959;
+        margin: auto;
+        padding: 20px;
+        width: 80%;
+        height: 60% auto;
+        border: 1px solid;
+        border-radius: 15px;
+        box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+    #input{
+        width: 90%;
+        height: 45px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    #openPayment{
+        width: 90%;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        color: black;
+        background-color: wheat;
+        cursor: pointer;
+        margin-bottom: 15px;
+        h3{
+            display: flex;
+        }
+    }
+    #button{
+        width: 90%;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+    #button:active{
+        background-color: red;
+    }
+}
+#paymentBox{
+    text-align: center;
+    position: absolute;
+    background-color:  #062959;
+    width: 90%;
+    height: 60% auto;
+    border-radius: 15px;
+    box-sizing: border-box;
+    display: none;
+    #closePayment{
+        background-color: red;
+        color: black;
+        width: 100%;
+        height: 45px;
+        padding: 10px;
+        font-size: 30px;
+        border: none; 
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        padding-right: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        cursor: pointer;
+    }
+    #details{
+        text-align: start;
+        width: 100%;
+        padding-left: 40px;
+        box-sizing: border-box;
+        h3{
+            b{
+                color: gold;
+            }
+            color: white;
+        }
+    }
+    #pinput{
+        justify-self: center;
+        width: 90%;
+        height: 45px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+    }
+    #pinputReciept{
+        justify-self: center;
+        width: 90%;
+        height: 45px;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        box-sizing: border-box;
+        background-color: red;
+        display: block;
+        cursor: pointer;
+    }
+    #pbutton{
+        width: 90%;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        margin-bottom: 15px;
+    }
+}
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Register</h1>
+    <form action="#">
+        <br>
+        <input id="input" type="text" name="name" placeholder="Enter Your Name">
+        <br>
+        <input id="input" type="text" name="emailid" placeholder="Enter Your Email Id">
+        <br>
+        <input id="input" type="password" name="password" placeholder="Create Your Password">
+        <br>
+        <button id="openPayment" type="button">Payment</button>
+        <br>
+        <a href="#">
+        <button id="button" type="button">Register</button>
+        </a>
+        <h3>Registered? <a href="login.html">login</a> or <a href="/index.html">Back</a></h3>
+    </form>
+    </div>
+
+    <div id="paymentBox">
+        <div>
+            <button id="closePayment">x</button>
+            <div id="details">
+                <h3><b>Bank:</b> Opay</h3>
+                <h3><b>Acc:</b> 0000000000</h3>
+                <h3><b>Name:</b> Rabiu A Rabiu</h3>
+            </div>
+            <br>
+            <input id="pinput" type="text" name="name" placeholder="Enter Your Full Name">
+            <br>
+            <input id="pinput" type="text" name="emailid" placeholder="Enter Your Email Id">
+            <br>
+            <input id="pinput" type="text" name="name" placeholder="Money Sender Name">
+            <br>
+            <input id="pinputReciept" type="file" name="reciept">
+            <br>
+            <button id="pbutton">Send</button>
+        </div>
+    </div>
+    
+    <script src="register.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
